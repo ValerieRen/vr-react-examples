@@ -1,0 +1,3 @@
+[submodule "react-hooks-redux"]
+	path = react-hooks-redux
+	url = git@github.com:ValerieRen/react-hooks-redux.git
