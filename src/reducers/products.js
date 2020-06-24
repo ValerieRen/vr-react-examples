@@ -52,6 +52,24 @@ const products = (state = initState, action = {}) => {
         ...state,
         products: state.products.map(p => p.id === action.payload.id ? action.payload : p)
       }
+    case 'ADD_PRODUCT':
+      const productId = state.products
+        .map(p => p.id)
+        .reduce((acc, cur) => Math.max(acc, cur));
+
+      return {
+        ...state,
+        products: [
+          ...state.products,
+          {
+            id: productId + 1,
+            name: action.payload.item,
+            price: action.payload.price,
+            stocked: action.payload.stock,
+            currency: "$",
+          }
+        ]
+      }
     default:
       return state;
   }

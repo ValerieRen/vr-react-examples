@@ -1,25 +1,22 @@
 import React from 'react';
-import {useSelector} from 'react-redux';
+import Table from "./Table";
+import {useSelector} from "react-redux";
+import AddProduct from "./AddProduct";
 
 const Products = () => {
   const allProductInfo = useSelector(state => state.products.products || {});
 
   return (
-    <table>
-      <thead>
-        {
-          allProductInfo.map((p, i) => (
-            <tr key={i} className='product-table'>
-              <td>{p.id}</td>
-              <td>{p.name}</td>
-              <td>{`${p.currency} ${p.price}`}</td>
-              <td>{p.stocked ? 'In Stock' : 'Out of Stock'}</td>
-            </tr>
-            )
-          )
-        }
-      </thead>
-    </table>
+      <div className="container">
+          <div className="title">
+            <span>Products Information</span>
+          </div>
+          <Table data={allProductInfo} />
+          <div className="title">
+            <span>Add new product</span>
+          </div>
+          <AddProduct />
+      </div>
   );
 }
 
