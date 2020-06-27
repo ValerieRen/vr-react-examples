@@ -30,6 +30,17 @@
   margin: 0 auto;
 }
 
+.form-control {
+  border-style: hidden;
+  background-color: beige;
+  width: min-content;
+
+}
+
+.item-in-row {
+  display: inline;
+}
+
 .radio-group{
   display: flex;
   flex-direction: row;

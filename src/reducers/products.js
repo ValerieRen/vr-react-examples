@@ -50,7 +50,7 @@ const products = (state = initState, action = {}) => {
     case 'UPDATE_PRODUCT_BY_ID':
       return {
         ...state,
-        products: state.products.map(p => p.id === action.payload.id ? action.payload : p)
+        products: action.payload
       }
     case 'ADD_PRODUCT':
       const productId = state.products
@@ -69,6 +69,11 @@ const products = (state = initState, action = {}) => {
             currency: "$",
           }
         ]
+      }
+    case 'DELETE_PRODUCT_BY_ID':
+      const products = state.products.filter(p => p.id !== action.payload);
+      return {
+        products: products,
       }
     default:
       return state;
