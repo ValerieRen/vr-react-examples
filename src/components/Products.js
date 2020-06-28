@@ -1,5 +1,5 @@
 import React from 'react';
-import Table from "./Table";
+import ProductList from "./ProductList";
 import AddProduct from "./AddProduct";
 
 const Products = () => {
@@ -10,7 +10,7 @@ const Products = () => {
             <br/>
             <sub>You can edit Item, Price in the table</sub>
           </div>
-          <Table />
+          <ProductList />
           <div className="title">
             <span>Add new product</span>
           </div>

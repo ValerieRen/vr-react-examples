@@ -2,7 +2,7 @@ import React from "react";
 import {deleteProduct, updateProductId} from "../actions/products";
 import {useDispatch, useSelector} from "react-redux";
 
-const Table = () => {
+const ProductList = () => {
   const dispatch = useDispatch();
   const allProductInfo = useSelector(state => state.products.products || {});
 
@@ -75,4 +75,4 @@ const Table = () => {
   );
 }
 
-export default Table;
+export default ProductList;
