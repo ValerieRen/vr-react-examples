@@ -3,7 +3,7 @@ import React, {useState} from "react";
 const Colors = ({defaultColor}) => {
   const [color, setColor] = useState(defaultColor);
   return (
-    <>
+    <React.Fragment>
       <div>
         <span>useState sample</span>
       </div>
@@ -21,7 +21,7 @@ const Colors = ({defaultColor}) => {
           onClick={() => setColor('purple')}
         >Purple</button>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 
