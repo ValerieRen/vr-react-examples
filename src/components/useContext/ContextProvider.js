@@ -18,9 +18,6 @@ const ContextProvider = () => {
 
   return (
     <React.Fragment>
-      <div>
-        <span>useContext sample</span>
-      </div>
       <UserContext.Provider value={userState}>
         <ContextConsumer1 />
         <ContextConsumer2 />

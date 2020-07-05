@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 // useEffect will run after render
-const Count = () => {
+const SearchMovies = () => {
   const [searchValue, setSearchValue] = useState('');
   const [movie, setMovie] = useState({});
 
@@ -32,9 +32,6 @@ const Count = () => {
 
   return (
     <React.Fragment>
-      <div>
-        <span>useEffect sample</span>
-      </div>
       <div className='search'>
         <span>search movie: </span>
         <input
@@ -56,4 +53,4 @@ const Count = () => {
   )
 };
 
-export default Count;
+export default SearchMovies;

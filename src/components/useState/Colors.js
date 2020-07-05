@@ -4,9 +4,6 @@ const Colors = ({defaultColor}) => {
   const [color, setColor] = useState(defaultColor);
   return (
     <React.Fragment>
-      <div>
-        <span>useState sample</span>
-      </div>
       <div className='button-group'>
         <button
           className={`button ${color === 'blue' ? 'button-blue' : ''}`}
