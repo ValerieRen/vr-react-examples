@@ -1,21 +1,24 @@
 import React from 'react';
 import './App.scss';
-import Colors from "./components/useState/Colors";
-import SearchMovies from "./components/useEffect/SearchMovies";
-import ContextProvider from "./components/useContext/ContextProvider";
-import Counter from "./components/useReducer/Counter";
+import UseStateExample from "./components/useState/UseStateExample";
+import UseEffectExample from "./components/useEffect/UseEffectExample";
+import UseContextExample from "./components/useContext/UseContextExample";
+import UseReducerExample from "./components/useReducer/UseReducerExample";
+import UseMemoExample from "./components/useMemo/UseMemoExample";
 
 const App = () => {
   return (
     <div className='container'>
       <div className='title'><span>useState sample</span></div>
-      <Colors />
+      <UseStateExample />
       <div className='title'><span>useEffect sample</span></div>
-      <SearchMovies />
+      <UseEffectExample />
       <div className='title'><span>useContext sample</span></div>
-      <ContextProvider/>
+      <UseContextExample/>
       <div className='title'><span>useReducer sample</span></div>
-      <Counter/>
+      <UseReducerExample/>
+      <div className='title'><span>useCallback sample</span></div>
+      <UseMemoExample/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import {UserContext} from "./ContextProvider";
+import {UserContext} from "./UseContextExample";
 
 const ContextConsumer2 = () => {
   const context = useContext(UserContext);

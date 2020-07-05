@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const Colors = ({defaultColor}) => {
+const UseStateExample = ({defaultColor}) => {
   const [color, setColor] = useState(defaultColor);
   return (
     <React.Fragment>
@@ -22,4 +22,4 @@ const Colors = ({defaultColor}) => {
   );
 }
 
-export default Colors;
+export default UseStateExample;

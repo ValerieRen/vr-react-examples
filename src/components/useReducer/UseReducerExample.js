@@ -1,7 +1,7 @@
 import React, {useReducer} from "react";
 import {init, reducer} from "./reducer";
 
-const Counter = () => {
+const UseReducerExample = () => {
   const initialState = 0;
   const [state, dispatch] = useReducer(reducer, initialState, init);
 
@@ -15,4 +15,4 @@ const Counter = () => {
   );
 }
 
-export default Counter;
+export default UseReducerExample;

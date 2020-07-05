@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 // useEffect will run after render
-const SearchMovies = () => {
+const UseEffectExample = () => {
   const [searchValue, setSearchValue] = useState('');
   const [movie, setMovie] = useState({});
 
@@ -27,7 +27,7 @@ const SearchMovies = () => {
 
   // this side effect will happen when prop movie changed, this will be run
   useEffect(() => {
-    console.log('movie result has been changed');
+    console.log('UseEffectExample -> movie result has been changed');
   }, [movie])
 
   return (
@@ -53,4 +53,4 @@ const SearchMovies = () => {
   )
 };
 
-export default SearchMovies;
+export default UseEffectExample;

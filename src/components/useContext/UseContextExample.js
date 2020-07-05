@@ -5,7 +5,7 @@ import ContextConsumer2 from "./ContextConsumer2";
 export const UserContext = React.createContext();
 
 // UserContext object can shared to all the child components inside of UserContext.Provider
-const ContextProvider = () => {
+const UseContextExample = () => {
   const userState = {
     user: {
       fullName: 'First Last',
@@ -26,4 +26,4 @@ const ContextProvider = () => {
   );
 };
 
-export default ContextProvider;
+export default UseContextExample;
