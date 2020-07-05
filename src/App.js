@@ -5,6 +5,7 @@ import UseEffectExample from "./components/useEffect/UseEffectExample";
 import UseContextExample from "./components/useContext/UseContextExample";
 import UseReducerExample from "./components/useReducer/UseReducerExample";
 import UseMemoExample from "./components/useMemo/UseMemoExample";
+import UseCallbackExample from "./components/useCallback/UseCallbackExample";
 
 const App = () => {
   return (
@@ -17,8 +18,10 @@ const App = () => {
       <UseContextExample/>
       <div className='title'><span>useReducer sample</span></div>
       <UseReducerExample/>
-      <div className='title'><span>useCallback sample</span></div>
+      <div className='title'><span>useMemo sample</span></div>
       <UseMemoExample/>
+      <div className='title'><span>useCallback sample</span></div>
+      <UseCallbackExample/>
     </div>
   );
 }
