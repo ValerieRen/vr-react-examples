@@ -7,6 +7,7 @@ import UseReducerExample from "./components/useReducer/UseReducerExample";
 import UseMemoExample from "./components/useMemo/UseMemoExample";
 import UseCallbackExample from "./components/useCallback/UseCallbackExample";
 import UseRefExample from "./components/useRef/UseRefExample";
+import UseImperativeHandleExample from "./components/useImperativeHandle/UseImperativeHandleExample";
 
 const App = () => {
   return (
@@ -25,6 +26,8 @@ const App = () => {
       <UseCallbackExample/>
       <div className='title'><span>useRef sample</span></div>
       <UseRefExample/>
+      <div className='title'><span>useImperativeHandle sample</span></div>
+      <UseImperativeHandleExample/>
     </div>
   );
 }
