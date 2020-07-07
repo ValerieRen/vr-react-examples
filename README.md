@@ -41,3 +41,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### useful article
 https://kentcdodds.com/blog/usememo-and-usecallback
 https://medium.com/trabe/react-useref-hook-b6c9d39e2022
+https://daveceddia.com/useeffect-vs-uselayouteffect/

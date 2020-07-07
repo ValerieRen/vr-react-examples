@@ -8,6 +8,7 @@ import UseMemoExample from "./components/useMemo/UseMemoExample";
 import UseCallbackExample from "./components/useCallback/UseCallbackExample";
 import UseRefExample from "./components/useRef/UseRefExample";
 import UseImperativeHandleExample from "./components/useImperativeHandle/UseImperativeHandleExample";
+import UseLayoutEffectExample from "./components/useLayoutEffect/UseLayoutEffectExample";
 
 const App = () => {
   return (
@@ -28,6 +29,8 @@ const App = () => {
       <UseRefExample/>
       <div className='title'><span>useImperativeHandle sample</span></div>
       <UseImperativeHandleExample/>
+      <div className='title'><span>useLayoutEffect sample</span></div>
+      <UseLayoutEffectExample/>
     </div>
   );
 }
