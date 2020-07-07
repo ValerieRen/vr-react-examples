@@ -18,7 +18,7 @@
 }
 
 .title {
-  font-size: large;
+  font-size: medium;
   font-family: "Arial";
   font-style: italic;
 }
@@ -93,6 +93,11 @@
 }
 
 .ref {
+  margin: 20px 20px;
+  color: grey;
+}
+
+.layout {
   margin: 20px 20px;
   color: grey;
 }

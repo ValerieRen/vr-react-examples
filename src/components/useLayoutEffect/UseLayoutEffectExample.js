@@ -15,7 +15,11 @@ const UseLayoutEffectExample = () => {
 
 
   return (
-    <div/>
+    <React.Fragment>
+      <div className='layout'>
+        <span>see difference in console log</span>
+      </div>
+    </React.Fragment>
   );
 }
 
