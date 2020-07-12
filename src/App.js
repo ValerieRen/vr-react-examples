@@ -9,6 +9,7 @@ import UseCallbackExample from "./components/useCallback/UseCallbackExample";
 import UseRefExample from "./components/useRef/UseRefExample";
 import UseImperativeHandleExample from "./components/useImperativeHandle/UseImperativeHandleExample";
 import UseLayoutEffectExample from "./components/useLayoutEffect/UseLayoutEffectExample";
+import UseDebugValueExample from "./components/useDebugValue/UseDebugValueExample";
 
 const App = () => {
   const [show, setShow] = useState('');
@@ -37,6 +38,8 @@ const App = () => {
       {show === 'useImperativeHandle' ? <UseImperativeHandleExample/> : null}
       <div className='title' onClick={() => handleShowExample('useLayoutEffect')}><span>useLayoutEffect sample</span></div>
       {show === 'useLayoutEffect' ? <UseLayoutEffectExample/> : null}
+      <div className='title' onClick={() => handleShowExample('useDebugValue')}><span>useDebugValue sample</span></div>
+      {show === 'useDebugValue' ? <UseDebugValueExample/> : null}
     </div>
   );
 }
