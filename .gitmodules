@@ -1,6 +1,0 @@
-[submodule "react-hooks-redux"]
-	path = react-hooks-redux
-	url = git@github.com:ValerieRen/react-hooks-redux.git
-[submodule "react-hooks-samples"]
-	path = react-hooks-samples
-	url = git@github.com:ValerieRen/react-hooks-samples.git
