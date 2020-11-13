@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.title {
+  font-size: medium;
+  font-family: "Arial";
+  font-style: italic;
+}
+
+.button {
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+  width: 60px;
+  height: 30px;
+
+  &-blue {
+    color: white;
+    background: dodgerblue;
+  }
+  &-pink {
+    color: white;
+    background: hotpink;
+  }
+  &-purple {
+    color: white;
+    background: mediumpurple;
+  }
+}
+
+.search {
+  margin: 20px 20px;
+}
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-result label {
+  color: grey;
+}
+
+.user {
+  padding: 5px 5px;
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  color: grey;
+}
+
+.user div:first-child  {
+ padding-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+
+.counter {
+  margin: 20px 20px;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+}
+
+.counter span {
+  padding: 20px 10px;
+}
+
+.callback {
+  margin: 20px 20px;
+  color: grey;
+}
+
+.ref {
+  margin: 20px 20px;
+  color: grey;
+}
+
+.layout {
+  margin: 20px 20px;
+  color: grey;
+}
