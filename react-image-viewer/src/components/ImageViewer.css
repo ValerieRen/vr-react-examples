@@ -1,0 +1,11 @@
+.image-view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+}
+
+.image-360 {
+    width: 50%;
+    border: 3px solid grey;
+}
